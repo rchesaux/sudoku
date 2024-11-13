@@ -2,40 +2,36 @@
 <html>
     <head>
         <title>Sudoku</title>
-        <link rel="stylesheet" src="css/styles.css">
+        <link rel="stylesheet" src="styles.css">
     </head>
 
     <body>
         <h1>Tic Tac Toe!</h1>
 
-        <div id="row1">
-            <input type="text" id="a1">
-            <input type="text" id="a2">
-            <input type="text" id="a3">
+        <div id="board">
+            <div class="row">
+                <input type="text" id="a1">
+                <input type="text" id="a2">
+                <input type="text" id="a3">
+            </div>
+            <div class="row">
+                <input type="text" id="a4">
+                <input type="text" id="a5">
+                <input type="text" id="a6">
+            </div>
+            <div class="row">
+                <input type="text" id="a7">
+                <input type="text" id="a8">
+                <input type="text" id="a9">
+            </div>
         </div>
-        <div id="row2">
-            <input type="text" id="c1">
-            <input type="text" id="col2">
-            <input type="text" id="col3">
-        </div>
-        <div id="row3">
-            <input type="text" id="col1">
-            <input type="text" id="col2">
-            <input type="text" id="col3">
-        </div>
-        <p>Scores: </p>
-        <div>
-           <p> X: </p>
-            <p id="xScore"> 0</p> 
-        </div>
-        <div>
-            <p> O: </p>
-            <p id="OScore"> 0</p>
-        </div>
-            
 
+        <div class="scores">
+           <p> X: <span id="xScore">0</span></p>
+            <p> O:<span id="oScore">0</span></p>
+        </div>
         
-        <button>restart</button>
+        <button id="restart">Restart</button>
+        <script src="index.js"></script>
     </body>
-    <script src="js/index.js"></script>
 </html>
